@@ -1,6 +1,6 @@
 flask
 numpy
-p pillow
+pillow
 onnxruntime
 gspread
 oauth2client

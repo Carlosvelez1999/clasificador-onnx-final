@@ -1,12 +1,17 @@
-# Ignorar modelos ONNX descargados
+# Evitar modelos ONNX locales
 *.onnx
 
-# Ignorar credenciales sensibles
+# Evitar credenciales sensibles
+.env
 credentials/credentials.json
 
-# Ignorar variables de entorno
-.env
-
-# Carpeta de imágenes cargadas por usuarios
+# Subidas de usuarios (excepto .gitkeep)
 static/uploads/*
 !static/uploads/.gitkeep
+
+# Bytecode de Python
+__pycache__/
+
+# Cache de pytest
+.pytest_cache/
+

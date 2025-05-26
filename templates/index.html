@@ -64,7 +64,7 @@
         <input type="submit" value="Clasificar">
     </form>
 
-    {% if label %}
+    {% if label and image_filename %}
     <div class="resultado">
         <h2>Resultado</h2>
         <p><strong>Etiqueta predicha:</strong> {{ label }}</p>
