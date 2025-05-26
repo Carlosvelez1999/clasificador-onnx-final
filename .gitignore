@@ -11,6 +11,7 @@ static/uploads/*
 
 # Bytecode de Python
 __pycache__/
+*.pyc
 
 # Cache de pytest
 .pytest_cache/
