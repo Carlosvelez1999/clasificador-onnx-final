@@ -17,8 +17,13 @@ def test_predict_class_range():
     pred_class, _ = predict("download.jpg")
     assert 0 <= pred_class < 1000, "La clase predicha debe estar entre 0 y 999 (ImageNet)."
 
+def test_confidence_threshold():
+    _, confidence = predict("download.jpg")
+    assert confidence > 0.5, "La confianza es muy baja, puede indicar problemas en el modelo"
+
 if __name__ == "__main__":
     test_predict_output_type()
     test_predict_confidence_range()
     test_predict_class_range()
     print("✅ Todas las pruebas fueron exitosas")
+
